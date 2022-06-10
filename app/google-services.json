@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "171259024846",
+    "project_id": "veltech-leafscanner",
+    "storage_bucket": "veltech-leafscanner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171259024846:android:df388269ca6bfe2fa4c79f",
+        "android_client_info": {
+          "package_name": "com.dodo.veltech_leafscanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171259024846-lchhqusvm965nk597m7fu76fk8qeo3i0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYCaZY6__LmS71OPMOIz_hlBhq_RQ9ZkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171259024846-lchhqusvm965nk597m7fu76fk8qeo3i0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
