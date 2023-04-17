@@ -34,16 +34,12 @@ public class splash_screen extends AppCompatActivity {
             @Override
             public void run() {
                 FirebaseUser user=mAuth.getCurrentUser();
-                if(user==null){
-                    Intent intent = new Intent(splash_screen.this, login.class);
-                    startActivity(intent);
-                    finish();
-                }else{
-                    Intent mainIntent= new Intent(splash_screen.this, MainActivity.class);
+
+                    Intent mainIntent= new Intent(splash_screen.this, user_role.class);
                     mainIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     startActivity(mainIntent);
                     finish();
-                }
+
 
 
 

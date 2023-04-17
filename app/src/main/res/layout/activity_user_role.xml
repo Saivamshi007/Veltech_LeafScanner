@@ -14,6 +14,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:scaleType="centerCrop"/>
 
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/veltechlogo"
+        android:layout_marginTop="60dp"
+        android:alpha="0.6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/linear1"
@@ -70,6 +79,17 @@
 
                     android:fontFamily="monospace"
                     android:text="Self Help Group/சுய உதவி குழு"/>
+                <RadioButton
+                    android:id="@+id/public_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+
+                    android:textStyle="bold"
+                    android:textColor="#F6798A"
+
+                    android:fontFamily="monospace"
+                    android:text="Public/பொது"/>
 
 
             </RadioGroup>

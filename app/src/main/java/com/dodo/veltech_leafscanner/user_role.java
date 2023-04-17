@@ -55,7 +55,7 @@ public class user_role extends AppCompatActivity {
                 if(user.isChecked()){
                     intent(str,str2);
                 }else if(nursery.isChecked()){
-                    Intent in3 = new Intent(getApplicationContext(), MainActivity.class);
+                    Intent in3 = new Intent(getApplicationContext(), selfhelpgroups.class);
                     in3.putExtra(str3, str4);
                     startActivity(in3);
 
@@ -66,10 +66,10 @@ public class user_role extends AppCompatActivity {
 
     }
     public void intent(String string,String string2){
-        Intent in2 = new Intent(getApplicationContext(), MainActivity.class);
+        Intent in2 = new Intent(getApplicationContext(),MainActivity.class);
         in2.putExtra(string, string2);
         startActivity(in2);
-        Toast.makeText(this, "fg"+string+string2, Toast.LENGTH_SHORT).show();
+      //  Toast.makeText(this, "fg"+string+string2, Toast.LENGTH_SHORT).show();
 
     }
     @Override

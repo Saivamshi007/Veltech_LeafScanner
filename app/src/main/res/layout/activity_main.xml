@@ -6,6 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <ImageView
+        android:id="@+id/plantimg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:alpha="0.3"
+        android:src="@drawable/ayur"
+        android:scaleType="centerCrop"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,22 +39,7 @@
             android:textColor="#000"
             android:fontFamily="cursive"
             android:textSize="35dp"/>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="0.5">
-            <ImageView
-                android:id="@+id/logout"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginEnd="20dp"
 
-                android:src="@drawable/ic_baseline_logout_24"
-                android:layout_alignParentEnd="true"
-
-               />
-        </RelativeLayout>
 
 
     </LinearLayout>
@@ -48,6 +49,7 @@
         android:id="@+id/leaf"
         android:layout_width="match_parent"
         android:layout_height="400dp"
+
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
 
@@ -56,42 +58,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:id="@+id/searchbox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:visibility="gone"
-        android:layout_marginBottom="30dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/searchbtn">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="0.4"
-            android:gravity="center"
-            android:text="Mango"
-            android:textColor="#000"
-            android:textSize="20dp" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.6">
-
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-
-                android:layout_centerInParent="true"
-                android:src="@drawable/ic_baseline_keyboard_voice_24_black" />
-
-        </RelativeLayout>
-
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -104,19 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-            android:id="@+id/camera"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="visible"
-            android:text="camera"
-            android:textColor="#fff"
-            app:backgroundTint="#000"
-            app:icon="@drawable/ic_baseline_camera_alt_24"
-            app:iconTint="#fff"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+
 
 
 
@@ -127,16 +82,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
-        android:text="search"
+        android:text="add"
+        android:gravity="center"
         android:textColor="#fff"
-        android:visibility="gone"
+
         app:backgroundTint="#F3257A28"
-        app:icon="@drawable/ic_baseline_camera_alt_24"
+        app:icon="@drawable/ic_baseline_add_24"
         app:iconTint="#fff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:indeterminateTint="#000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
